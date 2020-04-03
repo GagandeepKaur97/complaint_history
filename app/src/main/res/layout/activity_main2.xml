@@ -38,14 +38,14 @@
                     <TextView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="@array/suffix"/>
+                        android:text="suffix"/>
                     <Spinner
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
                         android:id="@+id/spinner"
                         android:layout_marginLeft="5dp"
                         android:layout_weight="1"
-                        android:entries="suffix"/>
+                        android:entries="@array/suffix"/>
                 </TableRow>
                 <TextView
                     android:layout_height="wrap_content"
@@ -73,7 +73,20 @@
                     android:hint="last name"
                     android:layout_weight="1"/>
             </TableRow>
-
+            <TableRow
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Employment status"/>
+                <Spinner
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/status"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:entries="@array/status"/>
+            </TableRow>
         </TableLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
