@@ -22,4 +22,12 @@
     <item>support engineer</item>
     <item >project manager</item>
     </string-array>
+    <string-array name="issue">
+        <item>Choose a type</item>
+        <item>network problem</item>
+        <item>net slow</item>
+        <item>system crashing</item>
+        <item>software installation</item>
+        <item >less speed</item>
+    </string-array>
 </resources>

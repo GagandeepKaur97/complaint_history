@@ -128,11 +128,13 @@
                     android:layout_width="wrap_content"
 
                     android:hint="city"/>
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
 
-                    android:hint="country"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="country" />
+
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
@@ -160,7 +162,34 @@
 
                     android:hint="cell number"/>
             </TableRow>
-
+            <TableRow
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=" issue date"/>
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:hint="dd/mm/yy"
+                    android:layout_weight="1"/>
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="type of issue"/>
+                <Spinner
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/issue"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:entries="@array/issue"/>
+            </TableRow>
     </TableLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
