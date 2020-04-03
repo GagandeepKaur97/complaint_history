@@ -24,6 +24,20 @@
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+            <TableRow
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@array/suffix"/>
+                <Spinner
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/spinner"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:entries="suffix"/>
+            </TableRow>
 <TextView
     android:layout_height="wrap_content"
     android:layout_width="wrap_content"
@@ -43,6 +57,20 @@
                     android:layout_width="match_parent"
                     android:layout_marginLeft="5dp"
                     android:hint="first name"
+                    android:layout_weight="1"/>
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=" Last Name"/>
+                <EditText
+                    android:id="@+id/last_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:hint="last name"
                     android:layout_weight="1"/>
             </TableRow>
 

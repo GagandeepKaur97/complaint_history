@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">complaint_history</string>
+    <string-array name="suffix">
+        <item>Choose a type</item>
+        <item>mr</item>
+        <item>mrs</item>
+        <item>miss</item>
+        <item>Dr</item>
+    </string-array>
 </resources>
