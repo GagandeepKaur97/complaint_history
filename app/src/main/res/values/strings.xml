@@ -14,4 +14,12 @@
     <item >Part time</item>
     <item >trainee</item>
     </string-array>
+    <string-array name="designation">
+    <item>Choose a type</item>
+    <item>software engineer</item>
+    <item>designer</item>
+    <item>marketing</item>
+    <item>support engineer</item>
+    <item >project manager</item>
+    </string-array>
 </resources>
