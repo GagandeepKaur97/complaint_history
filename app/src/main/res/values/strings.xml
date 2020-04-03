@@ -9,18 +9,18 @@
     </string-array>
 
     <string-array name="status">
-    <item >choose one type</item>
-    <item >Full time</item>
-    <item >Part time</item>
-    <item >trainee</item>
+        <item>choose one type</item>
+        <item>Full time</item>
+        <item>Part time</item>
+        <item>trainee</item>
     </string-array>
     <string-array name="designation">
-    <item>Choose a type</item>
-    <item>software engineer</item>
-    <item>designer</item>
-    <item>marketing</item>
-    <item>support engineer</item>
-    <item >project manager</item>
+        <item>Choose a type</item>
+        <item>software engineer</item>
+        <item>designer</item>
+        <item>marketing</item>
+        <item>support engineer</item>
+        <item>project manager</item>
     </string-array>
     <string-array name="issue">
         <item>Choose a type</item>
@@ -28,6 +28,6 @@
         <item>net slow</item>
         <item>system crashing</item>
         <item>software installation</item>
-        <item >less speed</item>
+        <item>less speed</item>
     </string-array>
 </resources>

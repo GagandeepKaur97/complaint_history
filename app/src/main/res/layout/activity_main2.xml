@@ -5,6 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Main2Activity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
     <ScrollView
         android:id="@+id/scrollview"
@@ -104,7 +108,7 @@
             <TableRow
                 android:layout_marginTop="10dp">
                 <EditText
-                    android:id="@+id/st_nane"
+                    android:id="@+id/stno"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:hint="street no" />
@@ -119,12 +123,14 @@
             <TableRow
             android:layout_marginTop="10dp">
             <EditText
+                android:id="@+id/provinance"
                 android:layout_height="wrap_content"
                 android:layout_width="30dp"
 
-                android:hint="provinence"/>
+                android:hint="provinance"/>
 
                 <EditText
+                    android:id="@+id/city"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
@@ -134,12 +140,14 @@
                 android:layout_marginTop="10dp">
 
                 <EditText
+                    android:id="@+id/country"
                     android:layout_width="30dp"
                     android:layout_height="wrap_content"
 
                     android:hint="country" />
 
                 <EditText
+                    android:id="@+id/postalcode"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
@@ -148,6 +156,7 @@
             <TableRow
                 android:layout_marginTop="10dp">
             <EditText
+                android:id="@+id/email"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
 
@@ -156,11 +165,13 @@
             <TableRow
                 android:layout_marginTop="10dp">
                 <EditText
+                    android:id="@+id/countrycode"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
 
                     android:hint="country code"/>
                 <EditText
+                    android:id="@+id/cellnumber"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
 
@@ -172,13 +183,14 @@
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:text=" issue date"/>
+
                 <EditText
-                    android:id="@+id/date"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDate"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:hint="dd/mm/yy"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:hint="dd/mm/yy" />
             </TableRow>
             <TableRow
                 android:layout_marginTop="10dp">
@@ -202,6 +214,7 @@
                     android:text="severity "/>
 
                 <SeekBar
+                    android:id="@+id/severity"
                     android:max="100"
                     android:progress="10"
                     android:progressTint="#F61807" />
@@ -232,4 +245,5 @@
 
         </TableLayout>
     </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
