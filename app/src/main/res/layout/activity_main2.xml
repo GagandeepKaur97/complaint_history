@@ -244,7 +244,13 @@
                 android:text="REGISTER"
                 android:layout_marginTop="50dp"
                 android:gravity="center"/>
-
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="Clear" />
 
         </TableLayout>
     </ScrollView>
