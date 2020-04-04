@@ -37,7 +37,7 @@ public class Main3Activity extends AppCompatActivity {
         String CNO = extras.getString("Cellnumber");
         String DT = extras.getString("pickedDate");
         String IS = extras.getString("Issues");
-        Float sev = extras.getFloat("seekbar");
+        int RB = extras.getInt("Ratingbar");
         String DD = extras.getString("DetailDescription");
 
 
@@ -47,7 +47,7 @@ public class Main3Activity extends AppCompatActivity {
         form.setText("*********COMPLAINT FORM*******" +
                 "**********\n"+"Name of Complainer:    "+su+ " "+FN+" "+LN+"\nEmployment status:    "+ES+"\nDesignation:    "+DS+"\nStreet no:    "+SNO+"\nStreet Name:    "+SN+"\nProvince:    "+
                 P+"\nCity:    "+CI+"\nCountry:    "+CY+"\nPostal code:    "+PC+"\nEmail:    "+EM+"\nCountry Code:    "+CYC
-                +"\nCell Number:    "+CNO+"\nComplaint Issue Date:    "+DT+"\nIssues:    "+IS+"\n Severity:   "+sev+"\nDetailed Description:    "+DD);
+                +"\nCell Number:    "+CNO+"\nComplaint Issue Date:    "+DT+"\nIssues:    "+IS+"\n Rating:   "+RB+"\nDetailed Description:    "+DD);
         form.setTextColor(Color.BLACK);
         form.setTextSize(18);
 

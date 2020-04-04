@@ -13,6 +13,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.RatingBar;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -30,10 +31,7 @@ public class Main2Activity extends AppCompatActivity {
     private  Spinner issuesp ;
     private  String[] designation;
     private Spinner designationsp;
-
-
     private TextView firstname;
-
     private TextView lastname;
     private TextView streetno;
     private TextView streetname;
@@ -47,7 +45,7 @@ public class Main2Activity extends AppCompatActivity {
     private TextView detaildescription;
     private Button Register;
     private TextView Datetxt;
-    private SeekBar severity;
+    private RatingBar ratingbar;
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
@@ -76,7 +74,7 @@ public class Main2Activity extends AppCompatActivity {
         cellnumber= findViewById(R.id.cellnumber);
         detaildescription=findViewById(R.id.description);
         Datetxt = findViewById(R.id.txtDate);
-        severity = findViewById(R.id.severity);
+        ratingbar = findViewById(R.id.rating);
        ArrayAdapter<String> mStringArrayAdapter = new ArrayAdapter<>(Main2Activity.this,android.R.layout.simple_spinner_dropdown_item,suffix);
         suffixsp.setAdapter(mStringArrayAdapter);
         suffixsp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -193,7 +191,7 @@ public class Main2Activity extends AppCompatActivity {
                 extras.putString("Countrycode",countrycode.getText().toString());
                 extras.putString("Cellnumber",cellnumber.getText().toString());
                 extras.putString("pickedDate",Datetxt.getText().toString());
-                extras.putFloat("seekbar",severity.getProgress());
+                extras.putInt("Ratingbar",ratingbar.getProgress());
                 extras.putString("Issues",issuesp.getSelectedItem().toString());
                 extras.putString("DetailDescription",detaildescription.getText().toString());
                 mintent.putExtras(extras);
