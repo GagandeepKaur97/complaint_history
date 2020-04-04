@@ -233,12 +233,12 @@ public class Main2Activity extends AppCompatActivity {
                     String selectedCountrycode= countrycode.getText().toString();
                     String selectedCellnumber= cellnumber.getText().toString();
                     String selectedpickedDate= Datetxt.getText().toString();
-                    int selectedRatingbar= (int) ratingbar.getRating();
+                    Float selectedRatingbar =  ratingbar.getRating();
                     String selectedIssues= issuesp.getSelectedItem().toString();
                     String selectedDetailDescription= detaildescription.getText().toString();
 
                     complaintdetails C1 = new complaintdetails(selectedsuffix,selectedfirstname,selectedlastname,selectedempStatus,selectedDesgs,selectedStreetNo,selectedStreetName,selectedProvince,selectedCity,selectedCountry,selectedPostalcode,
-                            Email,Countrycode,Cellnumber,selectedpickedDate,selectedRatingbar,selectedIssues, selectedDetailDescription );
+                            selectedEmail,selectedCountrycode,selectedCellnumber,selectedpickedDate,selectedIssues,selectedRatingbar, selectedDetailDescription );
                     mintent.putExtra("object",C1);
 
                     startActivity(mintent);
